@@ -1,0 +1,72 @@
+/*   RESET   */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height:1;} article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {display:block;} nav ul, nav ol {list-style:none;} blockquote, q {quotes:none;} blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;} a {margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent;} ins {background-color:#ff9; color:#000; text-decoration:none;} mark {background-color:#ff9; color:#000; font-style:italic; font-weight:bold;} del {text-decoration: line-through;} abbr[title], dfn[title] {border-bottom:1px dotted; cursor:help;} table {border-collapse:collapse; border-spacing:0;} hr {display:block; height:1px; border:0; margin:1em 0; padding:0;} input, select {vertical-align:middle;}
+
+
+/*   MAIN STYLES   */
+html {background: #FCFCFC; color: #333; font-family: 'PT Sans',sans-serif; height: 100%;}
+body {height: 100%; margin: 0 auto; max-width: 978px; padding: 10px}
+a, #skills dl dd {-webkit-transition: all 0.15s ; -moz-transition: all 0.15s ; -ms-transition: all 0.15s ; -o-transition: all 0.15s ; transition: all 0.15s ;}
+
+
+/*   HEADER   */
+header.vcard {margin-bottom: 10px; overflow: hidden;}
+.fn {font-size: 2.7em; font-weight: bold; padding: 5px 0 5px 10px;}
+.role {background: #999; color: #FCFCFC; font-weight: normal; margin: 4px 0 13px; padding: 5px 5px 5px 10px; -webkit-border-radius: 5px; border-radius: 5px; -webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35);  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);}
+.contact {list-style: none; margin-bottom: 15px; overflow: hidden;}
+.contact li {border-right: 1px solid #ccc; display: inline; float: left; font-size: 0.8em; padding: 2px 0; text-align: center; width: 19.5%; overflow: hidden}
+.contact li:last-child {border: none}
+.contact a {color: #000;}
+.contact a:hover {background-color: #eee; text-decoration: none}
+
+
+/*   CONTENT   */
+section {font-size: 0.9em; margin: 30px 0; overflow: hidden; }
+section h1 {border-left: 2px solid #DDD; font-size: 1.25em; margin-bottom: 10px; padding-left: 5px; text-transform: uppercase;}
+section p {line-height: 1.5em; padding: 0 20px 5px;}
+
+#skills dl {margin-left: 15px;}
+#skills dl dt {clear: left; display: inline; float: left; margin: 10px 5px 10px 0; padding: 2px; text-align: right; width: 150px;}
+#skills dl dd {background: #dfdfdf; display: inline; float: left; font-size: 0.8em; margin: 10px 4px; padding: 4px; -webkit-border-radius: 5px; border-radius: 5px; -webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35);  box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35); cursor: default}
+#skills dl dd:hover {background-color: #ccc; -webkit-box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.15); box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.15); }
+
+#experience article {margin: 15px 0 37px 95px; padding-left: 5px; position: relative; border: 1px solid #FCFCFC}
+#experience article:last-child {margin-bottom: 0}
+#experience article:hover {border: 1px dotted #ddd; background: #fefefe}
+#experience article h1 {border: none; font-size: 1.2em; font-style: italic; font-weight: bold; padding: 0; text-transform: none;}
+#experience article h1 a {color: #333; text-decoration: none}
+#experience article h1 a:hover {background-color: #333; color: #eee} 
+#experience article h1 span {color: #777; font-size: 0.8em; font-weight: normal;}
+#experience article h2 {background: #eee; display: inline; font-size: 0.9em; font-weight: normal; padding: 3px;}
+#experience article .start, #experience article .end {background: #fff; border-top: 1px dashed #ddd; font-size: 0.75em; left: -80px; padding: 4px 0; position: absolute; text-align: center; top: 19px; width: 60px;}
+#experience article .end {top: 0; border: none}
+#experience article p {font-size: 0.9em; line-height: 22px; margin: 10px 0 0; padding-left: 0;}
+
+#education h2 {padding-left: 20px;}
+#education p {padding-top: 5px;}
+
+#hobbies ul {font-size: 0.9em; margin-left: 20px;}
+#hobbies ul li {margin: 10px 0; list-style: circle inside none; cursor: default}
+#hobbies ul li:hover {list-style: disc inside none;}
+#hobbies ul li a {color: #555}
+#hobbies ul li a:hover {background-color: #555; color: #eee; text-decoration: none}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:768px) {
+  .contact li {font-size: 0.7em;}
+}
+
+@media screen and (max-width:680px) {
+  #skills dl dt {display: block; float: none; margin: 0; text-align: left;}
+}
+
+@media screen and (max-width:500px) {
+  .contact li {border-right: medium none; display: block; float: none; font-size: 1em; overflow: hidden; padding: 6px 10px; text-align: left; width: auto;}
+}
+
+@media screen and (max-width:480px) {
+  #experience article {margin: 40px 0 37px;}
+  #experience article .start, #experience article .end {left: 0; top: -25px; border: none; border-right: 1px dashed #ddd;}
+  #experience article .end {left: 61px; top: -25px; border: none}
+}
