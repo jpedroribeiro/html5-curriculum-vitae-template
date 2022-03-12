@@ -53,6 +53,9 @@ section p {line-height: 1.5em; padding: 0 20px 5px;}
 
 
 /* MEDIA QUERIES */
+@media only screen and (min-width:480px) and (max-width:844px) {
+.contact li.url {font-size:9px;}
+}
 @media screen and (max-width:768px) {
   .contact li {font-size: 0.7em;}
 }
